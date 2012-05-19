@@ -1,0 +1,19 @@
+<h1> Want to here what potential employees think? </h1>
+ 
+<h2> Put your job posts here </h2>
+
+<body>
+	
+	<% @posts.each do |x| %>
+	<ul>
+		<li><%= link_to x.posts.company, posts_url%> </li>
+	
+		<li><%= x.company %> </li>
+		<li><%= x.text %> </li>
+		<li><%= x.ratings %> </li>
+	</ul>
+	<% end %>
+</body>	
+
+
+	
